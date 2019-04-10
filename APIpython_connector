@@ -1,0 +1,10 @@
+import requests, json
+ 
+url = "https://api.kennasecurity.com:443/assets"
+token = "QfFydNcEcHScztKMk47M5hcie1hR32Gb9ACxypG_Dwohf5uV5bTx55UqGL9UkSMy"
+headers = {'content-type': 'application/json', 'X-Risk-Token': token}
+ 
+api = requests.get(url, headers=headers)
+response = api.json()
+print(json.dumps(response, indent=4, sort_keys=True)) 
+# -*- coding: utf-8 -*-
