@@ -7,7 +7,7 @@ Tenable python connection test
 """
 
 from tenable.sc import TenableSC
-sc = TenableSC('tenable.partners.org')
+sc = TenableSC('insert your tenable url here')
 sc.login('login', 'password')
 for vuln in sc.analysis.vulns():
     ('listos', '=', 'Windows')
